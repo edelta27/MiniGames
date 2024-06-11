@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="creating a project and adding libraries">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/DrawingNumbers.java" afterDir="false" />
+    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="add drawning numbers and isEqual">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/DrawingNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/DrawingNumbers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/MiniLotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/MiniLotto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +77,8 @@
       <workItem from="1716129376610" duration="4480000" />
       <workItem from="1716137155925" duration="4112000" />
       <workItem from="1717526146284" duration="697000" />
-      <workItem from="1718044296724" duration="2110000" />
+      <workItem from="1718044296724" duration="2663000" />
+      <workItem from="1718130888246" duration="2225000" />
     </task>
     <task id="LOCAL-00001" summary="creating a project and adding libraries">
       <created>1715365467455</created>
@@ -97,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715366351484</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add drawning numbers and isEqual">
+      <created>1718046782192</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718046782192</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +120,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating a project and adding libraries" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating a project and adding libraries" />
+    <MESSAGE value="add drawning numbers and isEqual" />
+    <option name="LAST_COMMIT_MESSAGE" value="add drawning numbers and isEqual" />
   </component>
 </project>

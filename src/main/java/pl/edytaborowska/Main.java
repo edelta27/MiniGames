@@ -25,27 +25,17 @@ public class Main {
                     System.out.println("You have entered numbers greater than or less than the set of integers from 1 to 99, try again");
             }
         }
+        DrawingNumbers win = new DrawingNumbers();
+        List<Integer> winNumbs = win.getWinNumbs();
+        int result = win.checkResult(userNumbers);
 
-        System.out.println("Oto wylosowane liczby");
-        Random random = new Random();
+        System.out.println("Here are the numbers drawn " + winNumbs);
 
-        List<Integer> winNumbs = new ArrayList<Integer>();
-        for (int winNum = 0; winNum < 6; winNum++) {
-            int anotherRandomNumber = random.nextInt(100);
-            winNumbs.add(anotherRandomNumber);
-            System.out.println(winNumbs.get(winNum));
-        }
-
-        Collections.sort(winNumbs);
         Collections.sort(userNumbers);
+        System.out.println("The number of your hits " + result);
 
-        boolean isEqual = winNumbs.equals(userNumbers);
+        System.out.println(win.isEqual(userNumbers));
 
-        if (isEqual == true) {
-            System.out.println("Wygrałeś!!! Gratulacje!!!");
-        } else {
-            System.out.println("Twoje liczby nie wygrały, spróbuj jeszcze raz.");
-        }
 
     }
 }
