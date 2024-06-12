@@ -12,10 +12,24 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         List<Integer> userNumbers = new ArrayList();
+
+        boolean error = true;
+
         for (int i = 0; i < 6; ++i) {
-            int nextNumber = sc.nextInt();
-            userNumbers.add(nextNumber);
+            try{
+                int nextNumber = sc.nextInt();
+                error = false;
+                userNumbers.add(nextNumber);
+            }
+            catch(InputMismatchException ex){
+                System.out.println("Podana wartość nie jest liczbą calpwotą");
+                sc.nextLine();
+                i--;
+            }while (error);
+
+
         }
+        sc.close();
 
         if (userNumbers.size() != 6) System.out.println("You didn't provide 6 numbers, try again");
 
