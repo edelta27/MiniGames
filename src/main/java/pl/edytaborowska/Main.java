@@ -16,16 +16,31 @@ public class Main {
         boolean error = true;
 
         for (int i = 0; i < 6; ++i) {
-            try{
+            try {
                 int nextNumber = sc.nextInt();
                 error = false;
                 userNumbers.add(nextNumber);
-            }
-            catch(InputMismatchException ex){
-                System.out.println("Podana wartość nie jest liczbą calpwotą");
+            } catch (InputMismatchException ex) {
+                System.out.println("The value provided is not an integer");
                 sc.nextLine();
                 i--;
-            }while (error);
+            }
+            while (error) ;
+
+            if (userNumbers.get(i) < 1) {
+                System.out.println("You entered a number less than 1");
+                userNumbers.remove(i);
+                i--;
+
+
+            } else {
+                if (userNumbers.get(i) > 99) {
+                    System.out.println("You entered a number greater than 99");
+                    userNumbers.remove(i);
+                    i--;
+
+                }
+            }
 
 
         }
