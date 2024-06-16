@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="adding the conditions less 1 and greater 99">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/GameFactory.java" afterDir="false" />
+    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="add interface Game">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/MiniLotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/MiniLotto.java" afterDir="false" />
@@ -84,7 +82,7 @@
       <workItem from="1718130888246" duration="3202000" />
       <workItem from="1718219716073" duration="729000" />
       <workItem from="1718294444956" duration="2258000" />
-      <workItem from="1718547430847" duration="848000" />
+      <workItem from="1718547430847" duration="1964000" />
     </task>
     <task id="LOCAL-00001" summary="creating a project and adding libraries">
       <created>1715365467455</created>
@@ -128,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718295587784</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add interface Game">
+      <created>1718548407490</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718548407490</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +156,7 @@
     <MESSAGE value="creat class DrawningNumber" />
     <MESSAGE value="add exception InputMismatchException" />
     <MESSAGE value="adding the conditions less 1 and greater 99" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding the conditions less 1 and greater 99" />
+    <MESSAGE value="add interface Game" />
+    <option name="LAST_COMMIT_MESSAGE" value="add interface Game" />
   </component>
 </project>
