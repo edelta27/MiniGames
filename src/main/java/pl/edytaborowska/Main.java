@@ -6,10 +6,17 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hello! I invite you to play mini lotto, guess 6 numbers from 1 to 99. ");
-        System.out.println("Enter 6 numbers separated by a space and confirm with enter.");
-
         Scanner sc = new Scanner(System.in);
+
+        System.out.println("Wybierz grę do uruchomienia(np. lotto): ");
+        String gameType = sc.nextLine();
+        try {
+            Game game = GameFactory.getGame(gameType);
+            game.play();
+        }
+        catch (IllegalArgumentException e){
+            System.out.println(e.getMessage());
+        }
 
         List<Integer> userNumbers = new ArrayList();
 
