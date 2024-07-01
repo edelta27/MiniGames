@@ -5,13 +5,13 @@ import java.util.List;
 import java.util.Random;
 import java.util.*;
 
-public class DrawingNumbers {
+public class LottoRandom {
     private static final int RANGE_NUMBERS = 100;
     private static final int NUMBER_DRAWN = 6;
 
     private List<Integer> winNumbs = new ArrayList<Integer>();
 
-    DrawingNumbers() {
+    LottoRandom() {
         generate();
         sorting();
     }
