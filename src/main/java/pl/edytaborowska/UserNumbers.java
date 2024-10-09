@@ -3,19 +3,27 @@ package pl.edytaborowska;
 import java.util.*;
 
 public class UserNumbers {
-    private List<Integer> userNumbersList = new ArrayList();
 
-    UserNumbers(){
-        loadUserNumber();
+  //  public List<Integer> getSixNumbers(Scanner scanner) {
+
+   //     userNumbersList = loadUserNumber();
+   //     scanner.close();
+   //     return userNumbersList;
+   // }
+    private List<Integer> userNumbersList = new ArrayList<>();
+
+    public UserNumbers(){
+        Object scanner = new Object();
         sorting();
     }
 
     List<Integer> getUserNumber(){
         return userNumbersList;
     }
-    List<Integer> loadUserNumber() {
+    public List<Integer> loadUserNumber(Scanner sc) {
 
-        Scanner sc = new Scanner(System.in);
+
+
 
         boolean error = true;
 

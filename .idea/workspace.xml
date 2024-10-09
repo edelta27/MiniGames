@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="Moved implementation of the lotto game from Main to MiniLotto">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/UserNumbers.java" afterDir="false" />
+    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="add class UserNumbers">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/UserNumbersTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/DrawingNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/LottoRandom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/MiniLotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/MiniLotto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/UserNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/UserNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MiniLottoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/MiniLottoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,16 +37,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Edyta/IdeaProjects/git/MiniGames&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Edyta/IdeaProjects/MiniGry"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pl.edytaborowska" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.Main" />
       <module name="MiniGames" />
@@ -60,9 +65,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserNumbersTest.shouldReturnNumbersInListWhenAllInRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniGames" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edytaborowska.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edytaborowska" />
+      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.UserNumbersTest" />
+      <option name="METHOD_NAME" value="shouldReturnNumbersInListWhenAllInRange" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UserNumbersTest.shouldReturnNumbersInListWhenAllInRange" />
       </list>
     </recent_temporary>
   </component>
@@ -84,7 +106,14 @@
       <workItem from="1718219716073" duration="729000" />
       <workItem from="1718294444956" duration="2258000" />
       <workItem from="1718547430847" duration="2594000" />
-      <workItem from="1719858355390" duration="1003000" />
+      <workItem from="1719858355390" duration="1420000" />
+      <workItem from="1726932618074" duration="22000" />
+      <workItem from="1727277749089" duration="1686000" />
+      <workItem from="1727339184239" duration="624000" />
+      <workItem from="1727629571237" duration="1930000" />
+      <workItem from="1728231246688" duration="4999000" />
+      <workItem from="1728376038226" duration="6057000" />
+      <workItem from="1728472788239" duration="1147000" />
     </task>
     <task id="LOCAL-00001" summary="creating a project and adding libraries">
       <created>1715365467455</created>
@@ -142,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718549420436</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add class UserNumbers">
+      <created>1719859505170</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719859505170</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +203,7 @@
     <MESSAGE value="adding the conditions less 1 and greater 99" />
     <MESSAGE value="add interface Game" />
     <MESSAGE value="Moved implementation of the lotto game from Main to MiniLotto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved implementation of the lotto game from Main to MiniLotto" />
+    <MESSAGE value="add class UserNumbers" />
+    <option name="LAST_COMMIT_MESSAGE" value="add class UserNumbers" />
   </component>
 </project>
