@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="add class UserNumbers">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/UserNumbersTest.java" afterDir="false" />
+    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="add class UserNumbersTest">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/config/LottoGameConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/UserNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/UserNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MiniLottoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/MiniLottoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +112,7 @@
       <workItem from="1727629571237" duration="1930000" />
       <workItem from="1728231246688" duration="4999000" />
       <workItem from="1728376038226" duration="6057000" />
-      <workItem from="1728472788239" duration="1147000" />
+      <workItem from="1728472788239" duration="4310000" />
     </task>
     <task id="LOCAL-00001" summary="creating a project and adding libraries">
       <created>1715365467455</created>
@@ -178,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1719859505170</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add class UserNumbersTest">
+      <created>1728474158114</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728474158114</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +210,7 @@
     <MESSAGE value="add interface Game" />
     <MESSAGE value="Moved implementation of the lotto game from Main to MiniLotto" />
     <MESSAGE value="add class UserNumbers" />
-    <option name="LAST_COMMIT_MESSAGE" value="add class UserNumbers" />
+    <MESSAGE value="add class UserNumbersTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="add class UserNumbersTest" />
   </component>
 </project>

@@ -3,27 +3,25 @@ package pl.edytaborowska;
 import java.util.*;
 
 public class UserNumbers {
+    private Set<Integer> userNumbers = new HashSet<>();
 
-  //  public List<Integer> getSixNumbers(Scanner scanner) {
+    public UserNumbers() {
+        getUserNumber();
+        getSixNumbers();
 
-   //     userNumbersList = loadUserNumber();
-   //     scanner.close();
-   //     return userNumbersList;
-   // }
-    private List<Integer> userNumbersList = new ArrayList<>();
-
-    public UserNumbers(){
-        Object scanner = new Object();
-        sorting();
     }
 
-    List<Integer> getUserNumber(){
-        return userNumbersList;
+    public Set<Integer> getSixNumbers(Scanner scanner) {
+        userNumbers = loadUserNumber(scanner);
+        scanner.close();
+        return userNumbers;
     }
-    public List<Integer> loadUserNumber(Scanner sc) {
 
+    public Set<Integer> getUserNumber() {
+        return userNumbers;
+    }
 
-
+    public Set<Integer> loadUserNumber(Scanner sc) {
 
         boolean error = true;
 
@@ -31,7 +29,7 @@ public class UserNumbers {
             try {
                 int nextNumber = sc.nextInt();
                 error = false;
-                userNumbersList.add(nextNumber);
+                userNumbers.add(nextNumber);
             } catch (InputMismatchException ex) {
                 System.out.println("The value provided is not an integer");
                 sc.nextLine();
@@ -39,16 +37,16 @@ public class UserNumbers {
             }
             while (error) ;
 
-            if (userNumbersList.get(i) < 1) {
+            if (userNumbers.iterator() < 1) {
                 System.out.println("You entered a number less than 1");
-                userNumbersList.remove(i);
+                userNumbers.remove(i);
                 i--;
 
 
             } else {
-                if (userNumbersList.get(i) > 99) {
+                if (userNumbers.get(i) > 99) {
                     System.out.println("You entered a number greater than 99");
-                    userNumbersList.remove(i);
+                    userNumbers.remove(i);
                     i--;
 
                 }
@@ -57,10 +55,20 @@ public class UserNumbers {
 
         }
         sc.close();
-        return userNumbersList;
+        return userNumbers;
+
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        UserNumbers that = (UserNumbers) o;
+        return Objects.equals(userNumbers, that.userNumbers);
     }
 
-    private void sorting() {
-        Collections.sort(userNumbersList);
+    @Override
+    public int hashCode() {
+        return Objects.hash(userNumbers);
     }
+
 }
