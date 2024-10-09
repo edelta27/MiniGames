@@ -1,5 +1,8 @@
 package pl.edytaborowska;
 
+import static pl.edytaborowska.lotto.config.LottoGameConfiguration.HOW_MANY_NUMBERS_FROM_USER;
+import static pl.edytaborowska.lotto.config.LottoGameConfiguration.LOWER_BOUND;
+import static pl.edytaborowska.lotto.config.LottoGameConfiguration.UPPER_BOUND;
 import java.util.*;
 
 public class UserNumbers {
@@ -7,57 +10,40 @@ public class UserNumbers {
 
     public UserNumbers() {
         getUserNumber();
-        getSixNumbers();
-
     }
-
+    public Set<Integer> getUserNumber() {
+        return userNumbers;
+    }
     public Set<Integer> getSixNumbers(Scanner scanner) {
-        userNumbers = loadUserNumber(scanner);
+        userNumbers = loadUserNumbers(scanner);
         scanner.close();
         return userNumbers;
     }
 
-    public Set<Integer> getUserNumber() {
-        return userNumbers;
-    }
+    public Set<Integer> loadUserNumbers(Scanner sc) {
+        System.out.println("Hello! I invite you to play mini lotto, guess 6 numbers from 1 to 99. ");
 
-    public Set<Integer> loadUserNumber(Scanner sc) {
+        while (userNumbers.size() < HOW_MANY_NUMBERS_FROM_USER) {
+            System.out.println("Enter 6 numbers separated by a space and confirm with enter.");
 
-        boolean error = true;
-
-        for (int i = 0; i < 6; ++i) {
-            try {
-                int nextNumber = sc.nextInt();
-                error = false;
-                userNumbers.add(nextNumber);
-            } catch (InputMismatchException ex) {
-                System.out.println("The value provided is not an integer");
-                sc.nextLine();
-                i--;
-            }
-            while (error) ;
-
-            if (userNumbers.iterator() < 1) {
-                System.out.println("You entered a number less than 1");
-                userNumbers.remove(i);
-                i--;
-
-
-            } else {
-                if (userNumbers.get(i) > 99) {
-                    System.out.println("You entered a number greater than 99");
-                    userNumbers.remove(i);
-                    i--;
-
+            while (!sc.hasNextInt()) {
+                System.out.println("Enter a number between 1 and 99");
+                if (!sc.hasNext()) {
+                    return Collections.emptySet();
                 }
             }
 
-
+            final int userNumber = sc.nextInt();
+            if (userNumber >= LOWER_BOUND && userNumber <= UPPER_BOUND) {
+                userNumbers.add(userNumber);
+            } else {
+                System.out.println("Enter a number between 1 and 99");
+            }
         }
-        sc.close();
         return userNumbers;
-
     }
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
