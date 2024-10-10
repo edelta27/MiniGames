@@ -8,19 +8,14 @@ import java.util.*;
 public class UserNumbers {
     private Set<Integer> userNumbers = new HashSet<>();
 
-    public UserNumbers() {
-        getUserNumber();
-    }
-    public Set<Integer> getUserNumber() {
-        return userNumbers;
-    }
     public Set<Integer> getSixNumbers(Scanner scanner) {
-        userNumbers = loadUserNumbers(scanner);
+        Set<Integer> userNumbers = loadUserNumbers(scanner);
         scanner.close();
         return userNumbers;
     }
 
-    public Set<Integer> loadUserNumbers(Scanner sc) {
+    private Set<Integer> loadUserNumbers(Scanner sc) {
+        final Set<Integer> userNumbers = new HashSet<>();
         System.out.println("Hello! I invite you to play mini lotto, guess 6 numbers from 1 to 99. ");
 
         while (userNumbers.size() < HOW_MANY_NUMBERS_FROM_USER) {
@@ -32,7 +27,6 @@ public class UserNumbers {
                     return Collections.emptySet();
                 }
             }
-
             final int userNumber = sc.nextInt();
             if (userNumber >= LOWER_BOUND && userNumber <= UPPER_BOUND) {
                 userNumbers.add(userNumber);
@@ -43,18 +37,9 @@ public class UserNumbers {
         return userNumbers;
     }
 
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        UserNumbers that = (UserNumbers) o;
-        return Objects.equals(userNumbers, that.userNumbers);
+    public Set<Integer> getUserNumber() {
+        return userNumbers;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(userNumbers);
-    }
 
 }

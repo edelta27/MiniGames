@@ -1,15 +1,23 @@
 package pl.edytaborowska;
 
 import java.util.*;
+import java.util.Scanner;
 
 public class MiniLotto implements Game {
+
+    private final UserNumbers userNumbers = new UserNumbers();
+    private final LottoRandom win = new LottoRandom();
+
+
+    public MiniLotto() {
+    }
+
     @Override
     public void play() {
 
-        UserNumbers userNumbers = new UserNumbers();
-        Set<Integer> userNumbersSet = userNumbers.getUserNumber();
+        Scanner scanner = new Scanner(System.in);;
+        final Set<Integer> userNumbersSet = userNumbers.getSixNumbers(scanner);
 
-        LottoRandom win = new LottoRandom();
         Set<Integer> winNumbs = win.getWinNumbs();
 
         int numberHit = win.checkResult(userNumbersSet).size();
@@ -20,18 +28,5 @@ public class MiniLotto implements Game {
         System.out.println(win.isEqual(userNumbers.getUserNumber()));
     }
 
-    private static void generate(Collection<Integer> collection) {
-        for (int i = 1; i < 100; ++i) {
-            collection.add(i);
-        }
-    }
 
-    private static void printCollection(Collection<Integer> collection) {
-        Iterator var1 = collection.iterator();
-        while (var1.hasNext()) {
-            Integer s = (Integer) var1.next();
-            System.out.print("" + s + "; ");
-        }
-        System.out.println();
-    }
 }
