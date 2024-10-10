@@ -1,37 +1,34 @@
 package pl.edytaborowska;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 import java.util.*;
+import static pl.edytaborowska.lotto.config.LottoGameConfiguration.NUMBERS_TO_GENERATE;
+import static pl.edytaborowska.lotto.config.LottoGameConfiguration.NUMBER_ORIGIN;
+import static pl.edytaborowska.lotto.config.LottoGameConfiguration.RANDOM_NUMBER_BOUND;
 
 public class LottoRandom {
-    private static final int RANGE_NUMBERS = 100;
-    private static final int NUMBER_DRAWN = 6;
 
-    private List<Integer> winNumbs = new ArrayList<Integer>();
+    private Set<Integer> winNumbs = new HashSet<>();
 
     LottoRandom() {
         generate();
-        sorting();
+
     }
-    List<Integer> getWinNumbs(){
+
+    Set<Integer> getWinNumbs() {
         return winNumbs;
     }
 
     private void generate() {
         Random random = new Random();
-        for (int winNum = 0; winNum < NUMBER_DRAWN; winNum++) {
-            int anotherRandomNumber = random.nextInt(RANGE_NUMBERS);
+        for (int winNum = NUMBER_ORIGIN - 1; winNum < NUMBERS_TO_GENERATE; winNum++) {
+            int anotherRandomNumber = random.nextInt(RANDOM_NUMBER_BOUND);
             winNumbs.add(anotherRandomNumber);
         }
     }
 
-    private void sorting() {
-        Collections.sort(winNumbs);
-    }
 
-    String isEqual(List<Integer> userNumbers) {
+    String isEqual(Set<Integer> userNumbers) {
         String congratulations = "You won!!! Congratulations!!!";
         String defeat = "Your numbers didn't win, try again.";
         boolean comparison = winNumbs.equals(userNumbers);
@@ -42,15 +39,14 @@ public class LottoRandom {
             return defeat;
         }
     }
-    int checkResult(List<Integer> userNumbers) {
-        int found = 0;
-        for(int i = 0; i< NUMBER_DRAWN;i++){
-            if(winNumbs.contains(userNumbers.get(i)))
-                found++;}
-        return found;
-        }
+
+    Set<Integer> checkResult(Set<Integer> userNumbers) {
+        Set<Integer> finalHitNumbers = new HashSet<>(userNumbers);
+        finalHitNumbers.retainAll(winNumbs);
+        return finalHitNumbers;
 
     }
+}
 
 
 
