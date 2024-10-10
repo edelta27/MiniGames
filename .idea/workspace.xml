@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="replacing the List Collection with a Set and the entire UserNumbers class structure">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="replacing the List Collection with a Set and the entire LottoRandom class structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/LottoRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/LottoRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/MiniLotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/MiniLotto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/MiniLottoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/MiniLottoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +114,7 @@
       <workItem from="1728231246688" duration="4999000" />
       <workItem from="1728376038226" duration="6057000" />
       <workItem from="1728472788239" duration="7680000" />
-      <workItem from="1728547957101" duration="4452000" />
+      <workItem from="1728547957101" duration="6981000" />
     </task>
     <task id="LOCAL-00001" summary="creating a project and adding libraries">
       <created>1715365467455</created>
@@ -200,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728494134588</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="replacing the List Collection with a Set and the entire LottoRandom class structure">
+      <created>1728556317380</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728556317380</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +236,7 @@
     <MESSAGE value="add class UserNumbersTest" />
     <MESSAGE value="add class LottoGameConfiguration" />
     <MESSAGE value="replacing the List Collection with a Set and the entire UserNumbers class structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="replacing the List Collection with a Set and the entire UserNumbers class structure" />
+    <MESSAGE value="replacing the List Collection with a Set and the entire LottoRandom class structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="replacing the List Collection with a Set and the entire LottoRandom class structure" />
   </component>
 </project>
