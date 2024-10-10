@@ -19,7 +19,7 @@ public class UserNumbers {
         System.out.println("Hello! I invite you to play mini lotto, guess 6 numbers from 1 to 99. ");
 
         while (userNumbers.size() < HOW_MANY_NUMBERS_FROM_USER) {
-            System.out.println("Enter 6 numbers separated by a space and confirm with enter.");
+            System.out.println("Please give number: ");
 
             while (!sc.hasNextInt()) {
                 System.out.println("Enter a number between 1 and 99");
