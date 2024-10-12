@@ -3,6 +3,7 @@ package pl.edytaborowska;
 import static pl.edytaborowska.lotto.config.LottoGameConfiguration.HOW_MANY_NUMBERS_FROM_USER;
 import static pl.edytaborowska.lotto.config.LottoGameConfiguration.LOWER_BOUND;
 import static pl.edytaborowska.lotto.config.LottoGameConfiguration.UPPER_BOUND;
+
 import java.util.*;
 
 public class UserNumbers {

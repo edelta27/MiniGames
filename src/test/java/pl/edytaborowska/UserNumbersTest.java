@@ -17,6 +17,7 @@ class UserNumbersTest {
     @Test
     void shouldReturnNumbersInListWhenAllInRange() {
         //given
+
         Set<Integer> expectedNumbers = Collections.unmodifiableSet(new HashSet<>(Arrays.asList(1, 2, 3, 4, 5, 6)));
         String givenNumbers = "1 2 3 4 5 6";
         Scanner scanner = mockScannerIn(givenNumbers);
@@ -32,11 +33,10 @@ class UserNumbersTest {
     void shouldReturnNumbersInListWhenOneNotInRange() {
         //given
         Set<Integer> expectedNumbers = Collections.unmodifiableSet(new HashSet<>(Arrays.asList(1, 2, 3, 4, 5, 15)));
-        String givenNumbers = "1 2 3 4 101 15";
+        String givenNumbers = "1 2 3 4 5 101 15";
         Scanner scanner = mockScannerIn(givenNumbers);
         //when
         final Set<Integer> userInputNumbers = userNumbers.getSixNumbers(scanner);
-
         //then
         assertThat(expectedNumbers).isEqualTo(userInputNumbers);
 
@@ -45,6 +45,7 @@ class UserNumbersTest {
     @Test
     void shouldReturnZeroNumbersInListWhenAllNotInRange() {
         //given
+
         Set<Integer> expectedNumbers = Collections.emptySet();
         String givenNumbers = "0 -1 103 103 104 105 106";
         Scanner scanner = mockScannerIn(givenNumbers);

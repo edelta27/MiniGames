@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="fixed bug with scanner">
+    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="changed message &quot;Enter 6 numbers separated by a space and confirm with enter.&quot; - Please give a number">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/UserNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/UserNumbers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/UserNumbersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/UserNumbersTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +42,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Edyta/IdeaProjects/git/MiniGames"
+    "last_opened_file_path": "C:/Users/Edyta/IdeaProjects/MiniGry",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -49,7 +51,7 @@
       <recent name="pl.edytaborowska" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserNumbersTest.shouldReturnNumbersInListWhenOneNotInRange">
+  <component name="RunManager" selected="JUnit.UserNumbersTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.Main" />
       <module name="MiniGames" />
@@ -128,10 +130,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserNumbersTest.shouldReturnNumbersInListWhenOneNotInRange" />
         <item itemvalue="JUnit.UserNumbersTest" />
-        <item itemvalue="JUnit.UserNumbersTest.shouldReturnZeroNumbersInListWhenAllNotInRange" />
+        <item itemvalue="JUnit.UserNumbersTest.shouldReturnNumbersInListWhenOneNotInRange" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UserNumbersTest.shouldReturnZeroNumbersInListWhenAllNotInRange" />
         <item itemvalue="JUnit.UserNumbersTest.shouldReturnNumbersInListWhenAllInRange" />
       </list>
     </recent_temporary>
@@ -163,7 +165,8 @@
       <workItem from="1728376038226" duration="6057000" />
       <workItem from="1728472788239" duration="7680000" />
       <workItem from="1728547957101" duration="7535000" />
-      <workItem from="1728573631954" duration="3389000" />
+      <workItem from="1728573631954" duration="5646000" />
+      <workItem from="1728720915848" duration="3418000" />
     </task>
     <task id="LOCAL-00001" summary="creating a project and adding libraries">
       <created>1715365467455</created>
@@ -270,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728576676090</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="changed message &quot;Enter 6 numbers separated by a space and confirm with enter.&quot; - Please give a number">
+      <created>1728577327901</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1728577327901</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +312,11 @@
     <MESSAGE value="replacing the List Collection with a Set and the entire LottoRandom class structure" />
     <MESSAGE value="replacing the List Collection with a Set and the entire MiniLotto class structure" />
     <MESSAGE value="fixed bug with scanner" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bug with scanner" />
+    <MESSAGE value="changed message &quot;Enter 6 numbers separated by a space and confirm with enter.&quot; - Please give a number" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed message &quot;Enter 6 numbers separated by a space and confirm with enter.&quot; - Please give a number" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
