@@ -1,8 +1,11 @@
 package pl.edytaborowska;
 
+import lombok.Data;
+
 import java.util.*;
 import java.util.Scanner;
 
+@Data
 public class MiniLotto implements Game {
 
     private final UserNumbers userNumbers = new UserNumbers();
@@ -12,10 +15,17 @@ public class MiniLotto implements Game {
     public MiniLotto() {
     }
 
+    public MiniLotto(UserNumbers userNumbers, LottoRandom win) {
+    }
+
+    public MiniLotto(UserNumbers userNumbers, LottoRandom win, Scanner scanner) {
+    }
+
+
     @Override
     public void play() {
 
-        Scanner scanner = new Scanner(System.in);;
+        Scanner scanner = new Scanner(System.in);
         final Set<Integer> userNumbersSet = userNumbers.getSixNumbers(scanner);
 
         Set<Integer> winNumbs = win.getWinNumbs();
