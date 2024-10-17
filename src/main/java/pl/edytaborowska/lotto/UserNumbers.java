@@ -1,4 +1,4 @@
-package pl.edytaborowska;
+package pl.edytaborowska.lotto;
 
 import static pl.edytaborowska.lotto.config.LottoGameConfiguration.HOW_MANY_NUMBERS_FROM_USER;
 import static pl.edytaborowska.lotto.config.LottoGameConfiguration.LOWER_BOUND;

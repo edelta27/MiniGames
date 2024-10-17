@@ -1,5 +1,7 @@
 package pl.edytaborowska;
 
+import pl.edytaborowska.lotto.model.GameResult;
+
 public interface Game {
-    void play();
+    GameResult play();
 }

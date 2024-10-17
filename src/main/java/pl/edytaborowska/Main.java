@@ -1,22 +1,24 @@
 package pl.edytaborowska;
 
+import pl.edytaborowska.lotto.LottoRandom;
+import pl.edytaborowska.lotto.LottoHitNumberCalculator;
+import pl.edytaborowska.lotto.MiniLotto;
+import pl.edytaborowska.lotto.UserNumbers;
+
 import java.net.SocketOption;
 import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        final Game lottoGame = getLottoGame();
+        lottoGame.play();
+    }
 
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Select a game to launch(e.g. lotto): ");
-        String gameType = sc.nextLine();
-        try {
-            Game game = GameFactory.getGame(gameType);
-            game.play();
-        }
-        catch (IllegalArgumentException e){
-            System.out.println(e.getMessage());
-        }
-        sc.close();
+    private static Game getLottoGame() {
+        final UserNumbers userNumbers = new UserNumbers();
+        final LottoRandom randomGenerator = new LottoRandom();
+        final LottoHitNumberCalculator lottoHitNumberCalculator = new LottoHitNumberCalculator();
+        final Scanner scanner = new Scanner(System.in);
+        return new MiniLotto(userNumbers, randomGenerator, lottoHitNumberCalculator, scanner);
     }
 }

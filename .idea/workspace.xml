@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="fixed bug with test shouldReturnNumbersInListWhenOneNotInRange">
+    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="test main not working">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/LottoHitNumberCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/model/GameResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/model/GameResultInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/model/LottoGameResultInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/MiniLotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/MiniLotto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/GameFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/LottoRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/LottoRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/MiniLotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/MiniLotto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/UserNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/UserNumbers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/MiniLottoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/MiniLottoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/UserNumbersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/UserNumbersTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +61,21 @@
       <recent name="pl.edytaborowska" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MiniLottoTest.shouldReturnWinnerMessageWhenPlayerIsWinner">
+  <component name="RunManager" selected="JUnit.MiniLottoTest.shouldReturnWinnerMessageWithOneNumberMessageWhenPlayerHitOneNumber">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.Main" />
+      <module name="MiniGames" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edytaborowska.lotto.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MiniLottoTest.shouldReturnLoserMessageWhenPlayerIsLoser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MiniGames" />
       <extension name="coverage">
         <pattern>
@@ -62,6 +83,10 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="pl.edytaborowska" />
+      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.MiniLottoTest" />
+      <option name="METHOD_NAME" value="shouldReturnLoserMessageWhenPlayerIsLoser" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -70,7 +95,7 @@
       <module name="MiniGames" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.edytaborowska.*" />
+          <option name="PATTERN" value="pl.edytaborowska.lotto.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,11 +107,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserNumbersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MiniLottoTest.shouldReturnWinnerMessageWithOneNumberMessageWhenPlayerHitOneNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MiniGames" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pl.edytaborowska.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edytaborowska" />
+      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.MiniLottoTest" />
+      <option name="METHOD_NAME" value="shouldReturnWinnerMessageWithOneNumberMessageWhenPlayerHitOneNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserNumbersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniGames" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edytaborowska.lotto.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,45 +138,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserNumbersTest.shouldReturnNumbersInListWhenAllInRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MiniGames" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edytaborowska.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.edytaborowska" />
-      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.UserNumbersTest" />
-      <option name="METHOD_NAME" value="shouldReturnNumbersInListWhenAllInRange" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserNumbersTest.shouldReturnNumbersInListWhenOneNotInRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MiniGames" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edytaborowska.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.edytaborowska" />
-      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.UserNumbersTest" />
-      <option name="METHOD_NAME" value="shouldReturnNumbersInListWhenOneNotInRange" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MiniLottoTest.shouldReturnWinnerMessageWithOneNumberMessageWhenPlayerHitOneNumber" />
+        <item itemvalue="JUnit.MiniLottoTest.shouldReturnLoserMessageWhenPlayerIsLoser" />
         <item itemvalue="JUnit.MiniLottoTest.shouldReturnWinnerMessageWhenPlayerIsWinner" />
-        <item itemvalue="JUnit.UserNumbersTest.shouldReturnNumbersInListWhenAllInRange" />
-        <item itemvalue="JUnit.UserNumbersTest" />
-        <item itemvalue="JUnit.UserNumbersTest.shouldReturnNumbersInListWhenOneNotInRange" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UserNumbersTest" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +179,7 @@
       <workItem from="1728720915848" duration="4177000" />
       <workItem from="1728985429910" duration="8749000" />
       <workItem from="1729066837166" duration="3547000" />
-      <workItem from="1729158177766" duration="1572000" />
+      <workItem from="1729158177766" duration="7829000" />
     </task>
     <task id="LOCAL-00001" summary="creating a project and adding libraries">
       <created>1715365467455</created>
@@ -291,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728724838147</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="test main not working">
+      <created>1729159819832</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1729159819832</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +341,8 @@
     <MESSAGE value="fixed bug with scanner" />
     <MESSAGE value="changed message &quot;Enter 6 numbers separated by a space and confirm with enter.&quot; - Please give a number" />
     <MESSAGE value="fixed bug with test shouldReturnNumbersInListWhenOneNotInRange" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bug with test shouldReturnNumbersInListWhenOneNotInRange" />
+    <MESSAGE value="test main not working" />
+    <option name="LAST_COMMIT_MESSAGE" value="test main not working" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
