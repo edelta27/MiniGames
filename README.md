@@ -1,6 +1,4 @@
-<br/>
 Mini Gra Lotto
-<br/>
 
 Opis projektu: 
 Projekt przedstawia mini grę Lotto napisaną w języku Java, której celem jest odgadnięcie 6 liczb spośród 99. Gracz wybiera swoje liczby, a program losuje wyniki. Gra sprawdza, ile z wybranych liczb zostało poprawnie odgadniętych.
