@@ -8,14 +8,11 @@ import pl.edytaborowska.lotto.model.GameResultInfo;
 
 @Data
 public class LottoGameResultInfo implements GameResultInfo{
-
     private final Set<Integer> userGivenNumbers;
     private final Set<Integer> randomSixNumbers;
     private final Set<Integer> finalHitNumbers;
-
     @Override
     public String getGameResultMessage() {
         return String.format("You hit %d numbers! Winning numbers were %s, and yours were %s", finalHitNumbers.size(), randomSixNumbers, userGivenNumbers);
     }
-
 }

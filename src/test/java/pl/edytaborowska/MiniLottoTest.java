@@ -16,13 +16,10 @@ import java.util.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MiniLottoTest {
-
     private static final Scanner scannerMock = new Scanner(System.in);
     private static final UserNumbers userNumbersMock = mock(UserNumbers.class);
     private static final LottoRandom lottoRandomMock = mock(LottoRandom.class);
     private  static final LottoHitNumberCalculator numberHit = new LottoHitNumberCalculator();
-
-
     @Test
     void shouldReturnWinnerMessageWhenPlayerIsWinner() {
         //given

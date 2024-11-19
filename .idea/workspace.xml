@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="test main not working">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/LottoHitNumberCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/model/GameResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/model/GameResultInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/model/LottoGameResultInfo.java" afterDir="false" />
+    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="add MiniLottoTest (add GameResult, GameResultInfo, LottoHitNumberCalculator, LottoGameResultInfo, delete GameFactory)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/GameFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/LottoRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/LottoRandom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/MiniLotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/MiniLotto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/UserNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/UserNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/MiniLotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/MiniLotto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/UserNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/UserNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/config/LottoGameConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/config/LottoGameConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/model/GameResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/model/GameResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/model/LottoGameResultInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/model/LottoGameResultInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/MiniLottoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/MiniLottoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/UserNumbersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/UserNumbersTest.java" afterDir="false" />
     </list>
@@ -33,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -46,28 +47,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Edyta/IdeaProjects/MiniGry",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Edyta/IdeaProjects/git/MiniGames&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="pl.edytaborowska" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MiniLottoTest.shouldReturnWinnerMessageWithOneNumberMessageWhenPlayerHitOneNumber">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.Main" />
       <module name="MiniGames" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.edytaborowska.lotto.model.*" />
+          <option name="PATTERN" value="pl.edytaborowska.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,7 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MiniLottoTest.shouldReturnLoserMessageWhenPlayerIsLoser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MiniLottoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MiniGames" />
       <extension name="coverage">
         <pattern>
@@ -85,24 +86,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.edytaborowska" />
       <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.MiniLottoTest" />
-      <option name="METHOD_NAME" value="shouldReturnLoserMessageWhenPlayerIsLoser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MiniLottoTest.shouldReturnWinnerMessageWhenPlayerIsWinner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MiniGames" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edytaborowska.lotto.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.edytaborowska" />
-      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.MiniLottoTest" />
-      <option name="METHOD_NAME" value="shouldReturnWinnerMessageWhenPlayerIsWinner" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,13 +122,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserNumbersTest.shouldReturnNumbersInListWhenAllInRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniGames" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edytaborowska.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edytaborowska" />
+      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.UserNumbersTest" />
+      <option name="METHOD_NAME" value="shouldReturnNumbersInListWhenAllInRange" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MiniLottoTest.shouldReturnWinnerMessageWithOneNumberMessageWhenPlayerHitOneNumber" />
-        <item itemvalue="JUnit.MiniLottoTest.shouldReturnLoserMessageWhenPlayerIsLoser" />
-        <item itemvalue="JUnit.MiniLottoTest.shouldReturnWinnerMessageWhenPlayerIsWinner" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UserNumbersTest.shouldReturnNumbersInListWhenAllInRange" />
+        <item itemvalue="JUnit.MiniLottoTest" />
         <item itemvalue="JUnit.UserNumbersTest" />
+        <item itemvalue="JUnit.MiniLottoTest.shouldReturnWinnerMessageWithOneNumberMessageWhenPlayerHitOneNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +179,10 @@
       <workItem from="1728720915848" duration="4177000" />
       <workItem from="1728985429910" duration="8749000" />
       <workItem from="1729066837166" duration="3547000" />
-      <workItem from="1729158177766" duration="7829000" />
+      <workItem from="1729158177766" duration="10590000" />
+      <workItem from="1729353262065" duration="1605000" />
+      <workItem from="1731864046389" duration="1661000" />
+      <workItem from="1732036178560" duration="894000" />
     </task>
     <task id="LOCAL-00001" summary="creating a project and adding libraries">
       <created>1715365467455</created>
@@ -307,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1729159819832</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add MiniLottoTest (add GameResult, GameResultInfo, LottoHitNumberCalculator, LottoGameResultInfo, delete GameFactory)">
+      <created>1729178949849</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1729178949849</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +352,8 @@
     <MESSAGE value="changed message &quot;Enter 6 numbers separated by a space and confirm with enter.&quot; - Please give a number" />
     <MESSAGE value="fixed bug with test shouldReturnNumbersInListWhenOneNotInRange" />
     <MESSAGE value="test main not working" />
-    <option name="LAST_COMMIT_MESSAGE" value="test main not working" />
+    <MESSAGE value="add MiniLottoTest (add GameResult, GameResultInfo, LottoHitNumberCalculator, LottoGameResultInfo, delete GameFactory)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add MiniLottoTest (add GameResult, GameResultInfo, LottoHitNumberCalculator, LottoGameResultInfo, delete GameFactory)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -13,7 +13,6 @@ public class Main {
         final Game lottoGame = getLottoGame();
         lottoGame.play();
     }
-
     private static Game getLottoGame() {
         final UserNumbers userNumbers = new UserNumbers();
         final LottoRandom randomGenerator = new LottoRandom();

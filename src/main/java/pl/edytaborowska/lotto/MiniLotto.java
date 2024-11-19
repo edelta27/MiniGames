@@ -10,12 +10,10 @@ import java.util.Scanner;
 
 @Data
 public class MiniLotto implements Game {
-
     private final UserNumbers userNumbers;
     private final LottoRandom win;
     private final LottoHitNumberCalculator lottoHitNumberCalculator;
     private final Scanner scanner;
-
     public GameResult play() {
         System.out.println("Game Lotto started");
         final GameResultInfo gameResultInfo = getHitNumbers();
@@ -31,5 +29,4 @@ public class MiniLotto implements Game {
         System.out.println(gameResult.getGameResultInfo().getGameResultMessage());
         return gameResult;
     }
-
 }
