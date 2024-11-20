@@ -10,8 +10,8 @@ public class LottoRandom {
     public Set<Integer> getRandomSixNumbers() {
         Set<Integer> winNumbs = new HashSet<>();
         Random random = new Random();
-        for (int winNum = NUMBER_ORIGIN - 1; winNum < NUMBERS_TO_GENERATE; winNum++) {
-            int anotherRandomNumber = random.nextInt(RANDOM_NUMBER_BOUND);
+        for (int winNum = NUMBER_ORIGIN; winNum < NUMBERS_TO_GENERATE; winNum++) {
+            int anotherRandomNumber = random.nextInt(RANDOM_NUMBER_BOUND) + 1;
             winNumbs.add(anotherRandomNumber);
         }
         return winNumbs;
