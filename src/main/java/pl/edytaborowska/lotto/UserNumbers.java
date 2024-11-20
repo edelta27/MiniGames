@@ -16,19 +16,27 @@ public class UserNumbers {
     private Set<Integer> loadUserNumbers(Scanner sc) {
         final Set<Integer> userNumbers = new HashSet<>();
         System.out.println("Hello! I invite you to play mini lotto, guess 6 numbers from 1 to 99. ");
+
         while (userNumbers.size() < HOW_MANY_NUMBERS_FROM_USER) {
             System.out.println("Please give number: ");
-            while (!sc.hasNextInt()) {
-                System.out.println("Enter a number between 1 and 99");
-                if (!sc.hasNext()) {
-                    return Collections.emptySet();
+
+            //while (!sc.hasNextInt()) {
+            //    System.out.println("Enter a number between 1 and 99");
+            //    if (!sc.hasNext()) {
+            //        return Collections.emptySet();
+            //    }
+            //}
+            try {
+                int userNumber = sc.nextInt();
+                if (userNumber >= LOWER_BOUND && userNumber <= UPPER_BOUND) {
+                    userNumbers.add(userNumber);
+                } else {
+                    System.out.println("Enter a number between 1 and 99");
                 }
             }
-            final int userNumber = sc.nextInt();
-            if (userNumber >= LOWER_BOUND && userNumber <= UPPER_BOUND) {
-                userNumbers.add(userNumber);
-            } else {
-                System.out.println("Enter a number between 1 and 99");
+         catch (InputMismatchException ex){
+            System.out.println("The value provided is not an integer ");
+            sc.nextLine();
             }
         }
         return userNumbers;
