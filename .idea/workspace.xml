@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="removing the error in the random numbers, zero will no longer be a random number">
+    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="add error handling when entering non-integer numbers, letters or characters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/MiniLotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/MiniLotto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/UserNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/UserNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/config/LottoGameConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/config/LottoGameConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/UserNumbersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/UserNumbersTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +59,7 @@
       <recent name="pl.edytaborowska" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.UserNumbersTest.shouldReturnInfoWhenUserEnterLetter">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.Main" />
       <module name="MiniGames" />
@@ -70,7 +73,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MiniLottoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserNumbersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MiniGames" />
       <extension name="coverage">
         <pattern>
@@ -79,13 +82,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.edytaborowska" />
-      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.MiniLottoTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.UserNumbersTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MiniLottoTest.shouldReturnWinnerMessageWithOneNumberMessageWhenPlayerHitOneNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserNumbersTest.shouldReturnInfoWhenUserEnterLetter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MiniGames" />
       <extension name="coverage">
         <pattern>
@@ -94,29 +97,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.edytaborowska" />
-      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.MiniLottoTest" />
-      <option name="METHOD_NAME" value="shouldReturnWinnerMessageWithOneNumberMessageWhenPlayerHitOneNumber" />
+      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.UserNumbersTest" />
+      <option name="METHOD_NAME" value="shouldReturnInfoWhenUserEnterLetter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserNumbersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MiniGames" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edytaborowska.lotto.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.edytaborowska" />
-      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.UserNumbersTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserNumbersTest.shouldReturnNumbersInListWhenAllInRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserNumbersTest.shouldReturnNumbersInListWhenOneNotInRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MiniGames" />
       <extension name="coverage">
         <pattern>
@@ -126,7 +114,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.edytaborowska" />
       <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.UserNumbersTest" />
-      <option name="METHOD_NAME" value="shouldReturnNumbersInListWhenAllInRange" />
+      <option name="METHOD_NAME" value="shouldReturnNumbersInListWhenOneNotInRange" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserNumbersTest.shouldReturnZeroNumbersInListWhenAllNotInRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniGames" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edytaborowska.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edytaborowska" />
+      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.UserNumbersTest" />
+      <option name="METHOD_NAME" value="shouldReturnZeroNumbersInListWhenAllNotInRange" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.UserNumbersTest.shouldReturnNumbersInListWhenAllInRange" />
-        <item itemvalue="JUnit.MiniLottoTest" />
+        <item itemvalue="JUnit.UserNumbersTest.shouldReturnInfoWhenUserEnterLetter" />
         <item itemvalue="JUnit.UserNumbersTest" />
-        <item itemvalue="JUnit.MiniLottoTest.shouldReturnWinnerMessageWithOneNumberMessageWhenPlayerHitOneNumber" />
+        <item itemvalue="JUnit.UserNumbersTest.shouldReturnNumbersInListWhenOneNotInRange" />
+        <item itemvalue="JUnit.UserNumbersTest.shouldReturnZeroNumbersInListWhenAllNotInRange" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +182,10 @@
       <workItem from="1731864046389" duration="1661000" />
       <workItem from="1732036178560" duration="1563000" />
       <workItem from="1732037798220" duration="2589000" />
-      <workItem from="1732125568692" duration="2321000" />
+      <workItem from="1732125568692" duration="4025000" />
+      <workItem from="1732209489726" duration="3625000" />
+      <workItem from="1732372776664" duration="1981000" />
+      <workItem from="1732388168779" duration="1214000" />
     </task>
     <task id="LOCAL-00001" summary="creating a project and adding libraries">
       <created>1715365467455</created>
@@ -327,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1732126233058</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add error handling when entering non-integer numbers, letters or characters">
+      <created>1732128217895</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1732128217895</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +379,8 @@
     <MESSAGE value="add MiniLottoTest (add GameResult, GameResultInfo, LottoHitNumberCalculator, LottoGameResultInfo, delete GameFactory)" />
     <MESSAGE value="removing unnecessary blank lines" />
     <MESSAGE value="removing the error in the random numbers, zero will no longer be a random number" />
-    <option name="LAST_COMMIT_MESSAGE" value="removing the error in the random numbers, zero will no longer be a random number" />
+    <MESSAGE value="add error handling when entering non-integer numbers, letters or characters" />
+    <option name="LAST_COMMIT_MESSAGE" value="add error handling when entering non-integer numbers, letters or characters" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

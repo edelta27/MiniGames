@@ -46,6 +46,28 @@ class UserNumbersTest {
         //then
         assertThat(expectedNumbers).isEqualTo(userInputNumbers);
     }
+
+    @Test
+    void shouldReturnInfoWhenUserEnterLetter(){
+        //given
+        //String letter = "p";
+        //Scanner scanner = mockScannerIn(letter);
+        //LUB
+        Set<Integer> expectedNumbers = Collections.unmodifiableSet(new HashSet<>(Arrays.asList(1, 2, 3, 4, 5, 6)));
+        String givenNumbers = "p 1 2 3 4 5 6";
+        Scanner scanner = mockScannerIn(givenNumbers);
+        //when
+        final Set<Integer> userInputNumbers = userNumbers.getSixNumbers(scanner);
+        //then
+        //"The value provided is not an integer "
+        //"Please give number: "
+        //Może wprowadzić ograniczenie do 3 nieudanych prób zapytać czy chce zgadywać dalej czy zakończyć gre
+        //LUB
+        assertEquals(expectedNumbers, userInputNumbers);
+
+    }
+
+
     private Scanner mockScannerIn(String data) {
         InputStream stdin = System.in;
         System.setIn(new ByteArrayInputStream(data.getBytes()));
