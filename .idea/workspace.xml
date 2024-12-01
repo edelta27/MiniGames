@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="add negative test in UserNumbersTest">
+    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="fixes issues identified by InteliiJ and SonarLint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/LottoHitNumberCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/LottoHitNumberCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/LottoRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/LottoRandom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/MiniLotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/MiniLotto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/UserNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/UserNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/model/GameResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/model/GameResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/model/LottoGameResultInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/model/LottoGameResultInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/MiniLottoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/MiniLottoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/UserNumbersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/UserNumbersTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +183,7 @@
       <workItem from="1732372776664" duration="1981000" />
       <workItem from="1732388168779" duration="1305000" />
       <workItem from="1732988113349" duration="2677000" />
-      <workItem from="1733033976026" duration="7118000" />
+      <workItem from="1733033976026" duration="8059000" />
     </task>
     <task id="LOCAL-00001" summary="creating a project and adding libraries">
       <created>1715365467455</created>
@@ -361,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733041393904</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="fixes issues identified by InteliiJ and SonarLint">
+      <created>1733043105363</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1733043105363</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,13 +401,17 @@
     <MESSAGE value="add error handling when entering non-integer numbers, letters or characters" />
     <MESSAGE value="add logger" />
     <MESSAGE value="add negative test in UserNumbersTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="add negative test in UserNumbersTest" />
+    <MESSAGE value="fixes issues identified by InteliiJ and SonarLint" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes issues identified by InteliiJ and SonarLint" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MiniGames$Main.ic" NAME="Main Coverage Results" MODIFIED="1733043468527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pl.edytaborowska.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/MiniGames$UserNumbersTest_shouldReturnInfoWhenUserEnterLetter.ic" NAME="UserNumbersTest.shouldReturnInfoWhenUserEnterLetter Coverage Results" MODIFIED="1732988450992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>pl.edytaborowska.*</FILTER>
     </SUITE>
