@@ -13,33 +13,48 @@ public class UserNumbers {
     Logger log = Logger.getLogger(String.valueOf(UserNumbers.class));
 
     private Set<Integer> userInputNumbers = new HashSet<>();
+
     public Set<Integer> getSixNumbers(Scanner scanner) {
         Set<Integer> userNumbers = loadUserNumbers(scanner);
         scanner.close();
         return userNumbers;
     }
-    private Set<Integer> loadUserNumbers(Scanner sc) {
+
+    public Set<Integer> loadUserNumbers(Scanner sc) {
         final Set<Integer> userNumbers = new HashSet<>();
         log.info("Hello! I invite you to play mini lotto, guess 6 numbers from 1 to 99. ");
+        log.info("Type 'end' to exit the game at any time.");
+
+        int attempts = 0; // Licznik prób wprowadzenia danych
+        final int MAX_ATTEMPTS = 3;
+
         while (userNumbers.size() < HOW_MANY_NUMBERS_FROM_USER) {
             log.info("Please give number: ");
-            //while (!sc.hasNextInt()) {
-            //    System.out.println("Enter a number between 1 and 99");
-            //    if (!sc.hasNext()) {
-            //        return Collections.emptySet();
-            //    }
-            //}
-            try {
-                int userNumber = sc.nextInt();
-                if (userNumber >= LOWER_BOUND && userNumber <= UPPER_BOUND) {
-                    userNumbers.add(userNumber);
-                } else {
-                    log.info("Enter a number between 1 and 99");
-                }
+            String input = sc.nextLine().trim();
+            if (input.equalsIgnoreCase("end")) {
+                log.info("You have ended the game. Thank you for playing!");
+                return userNumbers;
             }
-         catch (InputMismatchException ex){
-             log.info("The value provided is not an integer ");
-            sc.nextLine();
+            if (input.isEmpty()) {
+                attempts++;
+                log.info("You didn't provide any input. Please try again.");
+                if (attempts >= MAX_ATTEMPTS) {
+                    log.info("No valid input provided after multiple attempts. Returning an empty set.");
+                    return Collections.emptySet();
+                }
+                continue;
+            }
+            try {
+                int userNumber = Integer.parseInt(input);
+                if (userNumber >= LOWER_BOUND && userNumber <= UPPER_BOUND) {
+                    if (!userNumbers.add(userNumber)) {
+                        log.info("You have already entered this number. Try a different one.");
+                    }
+                } else {
+                    log.info("Enter a number between 1 and 99.");
+                }
+            } catch (NumberFormatException ex) {
+                log.info("The value provided is not a valid number. Please try again.");
             }
         }
         return userNumbers;

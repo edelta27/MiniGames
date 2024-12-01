@@ -4,8 +4,6 @@ import pl.edytaborowska.lotto.LottoRandom;
 import pl.edytaborowska.lotto.LottoHitNumberCalculator;
 import pl.edytaborowska.lotto.MiniLotto;
 import pl.edytaborowska.lotto.UserNumbers;
-
-import java.net.SocketOption;
 import java.util.*;
 
 public class Main {

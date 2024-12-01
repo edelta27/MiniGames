@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="add error handling when entering non-integer numbers, letters or characters">
+    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="add logger">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/MiniLotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/MiniLotto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/UserNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/UserNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/config/LottoGameConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/config/LottoGameConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/UserNumbersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/UserNumbersTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,23 +42,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Edyta/IdeaProjects/git/MiniGames",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Edyta/IdeaProjects/git/MiniGames&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="pl.edytaborowska" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserNumbersTest.shouldReturnInfoWhenUserEnterLetter">
+  <component name="RunManager" selected="JUnit.MiniLottoTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.Main" />
       <module name="MiniGames" />
@@ -69,6 +68,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MiniLottoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniGames" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edytaborowska.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edytaborowska" />
+      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.MiniLottoTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,7 +102,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserNumbersTest.shouldReturnInfoWhenUserEnterLetter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserNumbersTest.testEndCommand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MiniGames" />
       <extension name="coverage">
         <pattern>
@@ -98,13 +112,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.edytaborowska" />
       <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.UserNumbersTest" />
-      <option name="METHOD_NAME" value="shouldReturnInfoWhenUserEnterLetter" />
+      <option name="METHOD_NAME" value="testEndCommand" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserNumbersTest.shouldReturnNumbersInListWhenOneNotInRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserNumbersTest.testInvalidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MiniGames" />
       <extension name="coverage">
         <pattern>
@@ -114,23 +128,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.edytaborowska" />
       <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.UserNumbersTest" />
-      <option name="METHOD_NAME" value="shouldReturnNumbersInListWhenOneNotInRange" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserNumbersTest.shouldReturnZeroNumbersInListWhenAllNotInRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MiniGames" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edytaborowska.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.edytaborowska" />
-      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.UserNumbersTest" />
-      <option name="METHOD_NAME" value="shouldReturnZeroNumbersInListWhenAllNotInRange" />
+      <option name="METHOD_NAME" value="testInvalidInput" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserNumbersTest.shouldReturnInfoWhenUserEnterLetter" />
-        <item itemvalue="JUnit.UserNumbersTest" />
-        <item itemvalue="JUnit.UserNumbersTest.shouldReturnNumbersInListWhenOneNotInRange" />
-        <item itemvalue="JUnit.UserNumbersTest.shouldReturnZeroNumbersInListWhenAllNotInRange" />
+        <item itemvalue="JUnit.MiniLottoTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UserNumbersTest" />
+        <item itemvalue="JUnit.UserNumbersTest.testEndCommand" />
+        <item itemvalue="JUnit.UserNumbersTest.testInvalidInput" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +183,9 @@
       <workItem from="1732125568692" duration="4025000" />
       <workItem from="1732209489726" duration="3625000" />
       <workItem from="1732372776664" duration="1981000" />
-      <workItem from="1732388168779" duration="1214000" />
+      <workItem from="1732388168779" duration="1305000" />
+      <workItem from="1732988113349" duration="2677000" />
+      <workItem from="1733033976026" duration="5536000" />
     </task>
     <task id="LOCAL-00001" summary="creating a project and adding libraries">
       <created>1715365467455</created>
@@ -341,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1732128217895</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add logger">
+      <created>1732389418572</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1732389418572</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,10 +387,19 @@
     <MESSAGE value="removing unnecessary blank lines" />
     <MESSAGE value="removing the error in the random numbers, zero will no longer be a random number" />
     <MESSAGE value="add error handling when entering non-integer numbers, letters or characters" />
-    <option name="LAST_COMMIT_MESSAGE" value="add error handling when entering non-integer numbers, letters or characters" />
+    <MESSAGE value="add logger" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logger" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MiniGames$UserNumbersTest_shouldReturnInfoWhenUserEnterLetter.ic" NAME="UserNumbersTest.shouldReturnInfoWhenUserEnterLetter Coverage Results" MODIFIED="1732988450992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pl.edytaborowska.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/MiniGames$UserNumbersTest.ic" NAME="UserNumbersTest Coverage Results" MODIFIED="1732993504624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pl.edytaborowska.*</FILTER>
+    </SUITE>
   </component>
 </project>
