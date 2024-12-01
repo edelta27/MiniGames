@@ -1,6 +1,7 @@
 package pl.edytaborowska.lotto;
 
 import pl.edytaborowska.lotto.model.LottoGameResultInfo;
+
 import java.util.HashSet;
 import java.util.Set;
 

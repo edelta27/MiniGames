@@ -10,7 +10,8 @@ import java.util.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class UserNumbersTest {
-    private UserNumbers userNumbers = new UserNumbers();
+    private final UserNumbers userNumbers = new UserNumbers();
+
     @Test
     void testValidInput() {
         String input = "10\n20\n30\n40\n50\n60\n";
@@ -62,6 +63,7 @@ class UserNumbersTest {
         assertTrue(result.contains(50));
         assertTrue(result.contains(60));
     }
+
     @Test
     void testEmptyInput() {
         String input = "\n\n\n";
@@ -71,6 +73,7 @@ class UserNumbersTest {
 
         assertTrue(result.isEmpty());
     }
+
     @Test
     void testEndCommandImmediately() {
         String input = "end\n";
@@ -80,6 +83,7 @@ class UserNumbersTest {
 
         assertTrue(result.isEmpty());
     }
+
     @Test
     void testOutOfRangeNumbers() {
         String input = "-5\n200\n10\n20\n30\n40\n50\n60\n";
@@ -91,6 +95,7 @@ class UserNumbersTest {
         assertFalse(result.contains(-5));
         assertFalse(result.contains(200));
     }
+
     private Scanner mockScannerIn(String data) {
         InputStream stdin = System.in;
         System.setIn(new ByteArrayInputStream(data.getBytes()));

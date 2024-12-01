@@ -4,6 +4,7 @@ import pl.edytaborowska.lotto.LottoRandom;
 import pl.edytaborowska.lotto.LottoHitNumberCalculator;
 import pl.edytaborowska.lotto.MiniLotto;
 import pl.edytaborowska.lotto.UserNumbers;
+
 import java.util.*;
 
 public class Main {
@@ -11,6 +12,7 @@ public class Main {
         final Game lottoGame = getLottoGame();
         lottoGame.play();
     }
+
     private static Game getLottoGame() {
         final UserNumbers userNumbers = new UserNumbers();
         final LottoRandom randomGenerator = new LottoRandom();

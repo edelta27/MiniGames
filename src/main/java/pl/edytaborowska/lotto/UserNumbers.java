@@ -1,6 +1,5 @@
 package pl.edytaborowska.lotto;
 
-
 import static pl.edytaborowska.lotto.config.LottoGameConfiguration.HOW_MANY_NUMBERS_FROM_USER;
 import static pl.edytaborowska.lotto.config.LottoGameConfiguration.LOWER_BOUND;
 import static pl.edytaborowska.lotto.config.LottoGameConfiguration.UPPER_BOUND;
@@ -8,32 +7,29 @@ import static pl.edytaborowska.lotto.config.LottoGameConfiguration.UPPER_BOUND;
 import java.util.*;
 import java.util.logging.Logger;
 
-
 public class UserNumbers {
     Logger log = Logger.getLogger(String.valueOf(UserNumbers.class));
 
-    private Set<Integer> userInputNumbers = new HashSet<>();
-
     public Set<Integer> getSixNumbers(Scanner scanner) {
-        Set<Integer> userNumbers = loadUserNumbers(scanner);
+        Set<Integer> userInputNumbers = loadUserNumbers(scanner);
         scanner.close();
-        return userNumbers;
+        return userInputNumbers;
     }
 
     public Set<Integer> loadUserNumbers(Scanner sc) {
-        final Set<Integer> userNumbers = new HashSet<>();
+        final Set<Integer> userInputNumbers = new HashSet<>();
         log.info("Hello! I invite you to play mini lotto, guess 6 numbers from 1 to 99. ");
         log.info("Type 'end' to exit the game at any time.");
 
-        int attempts = 0; // Licznik prób wprowadzenia danych
+        int attempts = 0;
         final int MAX_ATTEMPTS = 3;
 
-        while (userNumbers.size() < HOW_MANY_NUMBERS_FROM_USER) {
+        while (userInputNumbers.size() < HOW_MANY_NUMBERS_FROM_USER) {
             log.info("Please give number: ");
             String input = sc.nextLine().trim();
             if (input.equalsIgnoreCase("end")) {
                 log.info("You have ended the game. Thank you for playing!");
-                return userNumbers;
+                return userInputNumbers;
             }
             if (input.isEmpty()) {
                 attempts++;
@@ -47,7 +43,7 @@ public class UserNumbers {
             try {
                 int userNumber = Integer.parseInt(input);
                 if (userNumber >= LOWER_BOUND && userNumber <= UPPER_BOUND) {
-                    if (!userNumbers.add(userNumber)) {
+                    if (!userInputNumbers.add(userNumber)) {
                         log.info("You have already entered this number. Try a different one.");
                     }
                 } else {
@@ -57,6 +53,6 @@ public class UserNumbers {
                 log.info("The value provided is not a valid number. Please try again.");
             }
         }
-        return userNumbers;
+        return userInputNumbers;
     }
 }
