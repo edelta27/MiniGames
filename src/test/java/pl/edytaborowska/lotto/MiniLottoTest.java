@@ -1,6 +1,7 @@
-package pl.edytaborowska;
+package pl.edytaborowska.lotto;
 
 import org.junit.jupiter.api.Test;
+import pl.edytaborowska.Game;
 import pl.edytaborowska.lotto.LottoHitNumberCalculator;
 import pl.edytaborowska.lotto.LottoRandom;
 import pl.edytaborowska.lotto.MiniLotto;
