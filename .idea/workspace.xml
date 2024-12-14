@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="sets changed to unmodifiable in MiniLottoTest">
+    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="changed LottoRandom getRandomSixNumbers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/LottoRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/LottoRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/UserNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/UserNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/config/LottoGameConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edytaborowska/lotto/config/LottoGameConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/lotto/MiniLottoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/lotto/MiniLottoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/lotto/UserNumbersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/lotto/UserNumbersTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +64,7 @@
       <recent name="pl.edytaborowska" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.MiniLottoTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.Main" />
       <module name="MiniGames" />
@@ -138,9 +142,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MiniLottoTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UserNumbersTest" />
-        <item itemvalue="JUnit.MiniLottoTest" />
         <item itemvalue="JUnit.MiniLottoTest.shouldReturnLoserMessageWhenPlayerIsLoser" />
         <item itemvalue="JUnit.MiniLottoTest.shouldReturnWinnerMessageWhenPlayerIsWinner" />
       </list>
@@ -188,7 +192,7 @@
       <workItem from="1732388168779" duration="1305000" />
       <workItem from="1732988113349" duration="2677000" />
       <workItem from="1733033976026" duration="8059000" />
-      <workItem from="1734192670236" duration="4334000" />
+      <workItem from="1734192670236" duration="4769000" />
     </task>
     <task id="LOCAL-00001" summary="creating a project and adding libraries">
       <created>1715365467455</created>
@@ -379,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1734196570353</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="changed LottoRandom getRandomSixNumbers">
+      <created>1734197208593</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1734197208593</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add drawning numbers and isEqual" />
     <MESSAGE value="creat class DrawningNumber" />
     <MESSAGE value="add exception InputMismatchException" />
     <MESSAGE value="adding the conditions less 1 and greater 99" />
@@ -449,7 +459,8 @@
     <MESSAGE value="fixes issues identified by InteliiJ and SonarLint" />
     <MESSAGE value="changed names of tests" />
     <MESSAGE value="sets changed to unmodifiable in MiniLottoTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="sets changed to unmodifiable in MiniLottoTest" />
+    <MESSAGE value="changed LottoRandom getRandomSixNumbers" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed LottoRandom getRandomSixNumbers" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

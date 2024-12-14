@@ -3,8 +3,6 @@ package pl.edytaborowska.lotto;
 import java.util.Random;
 import java.util.*;
 
-import static pl.edytaborowska.lotto.config.LottoGameConfiguration.NUMBERS_TO_GENERATE;
-import static pl.edytaborowska.lotto.config.LottoGameConfiguration.NUMBER_ORIGIN;
 import static pl.edytaborowska.lotto.config.LottoGameConfiguration.RANDOM_NUMBER_BOUND;
 
 public class LottoRandom {

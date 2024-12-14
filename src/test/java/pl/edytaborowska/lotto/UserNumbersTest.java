@@ -1,7 +1,6 @@
 package pl.edytaborowska.lotto;
 
 import org.junit.jupiter.api.Test;
-import pl.edytaborowska.lotto.UserNumbers;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;

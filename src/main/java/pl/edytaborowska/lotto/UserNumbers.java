@@ -3,6 +3,7 @@ package pl.edytaborowska.lotto;
 import static pl.edytaborowska.lotto.config.LottoGameConfiguration.HOW_MANY_NUMBERS_FROM_USER;
 import static pl.edytaborowska.lotto.config.LottoGameConfiguration.LOWER_BOUND;
 import static pl.edytaborowska.lotto.config.LottoGameConfiguration.UPPER_BOUND;
+import static pl.edytaborowska.lotto.config.LottoGameConfiguration.MAX_ATTEMPTS;
 
 import java.util.*;
 import java.util.logging.Logger;
@@ -22,7 +23,6 @@ public class UserNumbers {
         log.info("Type 'end' to exit the game at any time.");
 
         int attempts = 0;
-        final int MAX_ATTEMPTS = 3;
 
         while (userInputNumbers.size() < HOW_MANY_NUMBERS_FROM_USER) {
             log.info("Please give number: ");
