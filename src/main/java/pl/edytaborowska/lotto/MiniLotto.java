@@ -14,6 +14,7 @@ public class MiniLotto implements Game {
     private final LottoHitNumberCalculator lottoHitNumberCalculator;
     private final Scanner scanner;
     Logger log = Logger.getLogger(String.valueOf(MiniLotto.class));
+    @Override
     public GameResult play() {
         log.info("Game Lotto started");
         final GameResultInfo gameResultInfo = getHitNumbers();
