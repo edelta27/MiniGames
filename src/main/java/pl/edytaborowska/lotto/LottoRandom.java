@@ -12,7 +12,7 @@ public class LottoRandom {
 
     public Set<Integer> getRandomSixNumbers() {
         Set<Integer> winNumbs = new HashSet<>();
-        for (int winNum = NUMBER_ORIGIN; winNum < NUMBERS_TO_GENERATE; winNum++) {
+        while( winNumbs.size()<6) {
             int anotherRandomNumber = random.nextInt(RANDOM_NUMBER_BOUND) + 1;
             winNumbs.add(anotherRandomNumber);
         }
