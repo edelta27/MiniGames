@@ -23,8 +23,8 @@ class MiniLottoTest {
     @Test
     void shouldReturnWinnerMessageWhenPlayerIsWinner() {
 
-        Set<Integer> playerNumbers = Set.of(1, 2, 3, 4, 5, 6);
-        Set<Integer> randomNumbers = Set.of(1, 2, 3, 4, 5, 6);
+        Set<Integer> playerNumbers = Collections.unmodifiableSet(new HashSet<>(Arrays.asList(1, 2, 3, 4, 5, 6)));
+        Set<Integer> randomNumbers = Collections.unmodifiableSet(new HashSet<>(Arrays.asList(1, 2, 3, 4, 5, 6)));
         mockNumbers(playerNumbers, randomNumbers);
         Game lottoGame = new MiniLotto(userNumbersMock, lottoRandomMock, numberHit, scannerMock);
         final String expectedMessage = "You hit 6 numbers! Winning numbers were [1, 2, 3, 4, 5, 6], and yours were [1, 2, 3, 4, 5, 6]";
@@ -37,8 +37,8 @@ class MiniLottoTest {
     @Test
     void shouldReturnLoserMessageWhenPlayerIsLoser() {
 
-        Set<Integer> playerNumbers = Set.of(1, 2, 3, 4, 5, 6);
-        Set<Integer> randomNumbers = Set.of(7, 8, 9, 10, 11, 12);
+        Set<Integer> playerNumbers = Collections.unmodifiableSet(new HashSet<>(Arrays.asList(1, 2, 3, 4, 5, 6)));
+        Set<Integer> randomNumbers = Collections.unmodifiableSet(new HashSet<>(Arrays.asList(7, 8, 9, 10, 11, 12)));
         mockNumbers(playerNumbers, randomNumbers);
         Game lottoGame = new MiniLotto(userNumbersMock, lottoRandomMock, numberHit, scannerMock);
         final String expectedMessage = "You hit 0 numbers! Winning numbers were [7, 8, 9, 10, 11, 12], and yours were [1, 2, 3, 4, 5, 6]";
@@ -51,8 +51,8 @@ class MiniLottoTest {
     @Test
     void shouldReturnWinnerMessageWithOneNumberMessageWhenPlayerHitOneNumber() {
 
-        Set<Integer> playerNumbers = Set.of(1, 2, 3, 4, 5, 6);
-        Set<Integer> randomNumbers = Set.of(6, 8, 9, 10, 11, 12);
+        Set<Integer> playerNumbers = Collections.unmodifiableSet(new HashSet<>(Arrays.asList(1, 2, 3, 4, 5, 6)));
+        Set<Integer> randomNumbers = Collections.unmodifiableSet(new HashSet<>(Arrays.asList(6, 8, 9, 10, 11, 12)));
         mockNumbers(playerNumbers, randomNumbers);
         Game lottoGame = new MiniLotto(userNumbersMock, lottoRandomMock, numberHit, scannerMock);
         final String expectedMessage = "You hit 1 numbers! Winning numbers were [6, 8, 9, 10, 11, 12], and yours were [1, 2, 3, 4, 5, 6]";

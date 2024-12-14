@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="fixes issues identified by InteliiJ in MiniLottoTest">
+    <list default="true" id="1a8f7d9a-bf5a-478d-8c43-e4e00bea1082" name="Changes" comment="changed names of tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/MiniLottoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/lotto/MiniLottoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/UserNumbersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/lotto/UserNumbersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/lotto/MiniLottoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edytaborowska/lotto/MiniLottoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +60,54 @@
       <recent name="pl.edytaborowska" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserNumbersTest">
+  <component name="RunManager" selected="JUnit.MiniLottoTest">
+    <configuration name="MiniLottoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniGames" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edytaborowska.lotto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edytaborowska.lotto" />
+      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.lotto.MiniLottoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MiniLottoTest.shouldReturnLoserMessageWhenPlayerIsLoser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniGames" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edytaborowska.lotto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edytaborowska.lotto" />
+      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.lotto.MiniLottoTest" />
+      <option name="METHOD_NAME" value="shouldReturnLoserMessageWhenPlayerIsLoser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MiniLottoTest.shouldReturnWinnerMessageWhenPlayerIsWinner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniGames" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edytaborowska.lotto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edytaborowska.lotto" />
+      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.lotto.MiniLottoTest" />
+      <option name="METHOD_NAME" value="shouldReturnWinnerMessageWhenPlayerIsWinner" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserNumbersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MiniGames" />
       <extension name="coverage">
@@ -73,38 +119,6 @@
       <option name="PACKAGE_NAME" value="pl.edytaborowska.lotto" />
       <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.lotto.UserNumbersTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserNumbersTest.shouldEndWhenUserProvidesOnlyEnd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MiniGames" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edytaborowska.lotto.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.edytaborowska.lotto" />
-      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.lotto.UserNumbersTest" />
-      <option name="METHOD_NAME" value="shouldEndWhenUserProvidesOnlyEnd" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserNumbersTest.shouldReturnEmptySetWhenUserProvidesNullThreeTimes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MiniGames" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edytaborowska.lotto.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.edytaborowska.lotto" />
-      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.lotto.UserNumbersTest" />
-      <option name="METHOD_NAME" value="shouldReturnEmptySetWhenUserProvidesNullThreeTimes" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,29 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserNumbersTest.testEndCommandImmediately" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MiniGames" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edytaborowska.lotto.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.edytaborowska.lotto" />
-      <option name="MAIN_CLASS_NAME" value="pl.edytaborowska.lotto.UserNumbersTest" />
-      <option name="METHOD_NAME" value="testEndCommandImmediately" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MiniLottoTest" />
+        <item itemvalue="JUnit.MiniLottoTest.shouldReturnLoserMessageWhenPlayerIsLoser" />
+        <item itemvalue="JUnit.MiniLottoTest.shouldReturnWinnerMessageWhenPlayerIsWinner" />
         <item itemvalue="JUnit.UserNumbersTest" />
         <item itemvalue="JUnit.UserNumbersTest.shouldTakeSixNumbersWhenUserProvidesLetters" />
-        <item itemvalue="JUnit.UserNumbersTest.shouldEndWhenUserProvidesOnlyEnd" />
-        <item itemvalue="JUnit.UserNumbersTest.testEndCommandImmediately" />
-        <item itemvalue="JUnit.UserNumbersTest.shouldReturnEmptySetWhenUserProvidesNullThreeTimes" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +191,7 @@
       <workItem from="1732388168779" duration="1305000" />
       <workItem from="1732988113349" duration="2677000" />
       <workItem from="1733033976026" duration="8059000" />
-      <workItem from="1734192670236" duration="2654000" />
+      <workItem from="1734192670236" duration="3657000" />
     </task>
     <task id="LOCAL-00001" summary="creating a project and adding libraries">
       <created>1715365467455</created>
@@ -370,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733043105363</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="changed names of tests">
+      <created>1734195433752</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1734195433752</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +444,8 @@
     <MESSAGE value="add logger" />
     <MESSAGE value="add negative test in UserNumbersTest" />
     <MESSAGE value="fixes issues identified by InteliiJ and SonarLint" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes issues identified by InteliiJ and SonarLint" />
+    <MESSAGE value="changed names of tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed names of tests" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
